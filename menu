@@ -1,0 +1,39 @@
+GoFMT
+	go fmt %f
+
+GoRUN
+	go run %f
+
+GIT reset
+	git reset --hard origin
+
+Install on android device
+	adb install %f
+
+Extract by HARx
+	harx -x %b %f
+	find %b -type f -exec chmod 644 {} \;
+	find %b -type d -exec chmod 755 {} \;
+	rm -rf %f
+
+Fix tabs
+	cp %f %f.bak
+	perl -pe 's/\s{4}/\t/g' %f.bak > %f
+	rm -f %f.bak
+
+Fix line endings
+	find %f -type f -exec dos2unix {} \;
+
+Fix permissions
+	find %f -type f -exec chmod 644 {} \;
+	find %f -type d -exec chmod 755 {} \;
+
+Kill PYC
+	find %f -name *.pyc -exec rm -f {} \;
+
+Clean MacOS shit
+	find %f -name .DS_Store -exec rm -f {} \;
+
+Clean maps&js
+    find %f -name "*.map" -exec rm -f {} \;
+    find %f -name "*.js" -exec rm -f {} \;
