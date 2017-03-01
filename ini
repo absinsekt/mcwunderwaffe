@@ -49,7 +49,7 @@ ftpfs_first_cd_then_ls=1
 fish_directory_timeout=900
 editor_tab_spacing=4
 editor_word_wrap_line_length=72
-editor_fill_tabs_with_spaces=0
+editor_fill_tabs_with_spaces=1
 editor_return_does_auto_indent=0
 editor_backspace_through_tabs=0
 editor_fake_half_tabs=0
@@ -100,7 +100,7 @@ menubar_visible=1
 free_space=1
 horizontal_split=0
 vertical_equal=1
-left_panel_size=90
+left_panel_size=75
 horizontal_equal=1
 top_panel_size=1
 
