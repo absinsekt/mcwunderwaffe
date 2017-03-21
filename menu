@@ -1,3 +1,15 @@
+VimIt
+    vim %f
+
+Backup
+	mv %f %f~
+
+Unpack
+	tar xvf %f
+
+Pack (xz)
+	tar cvJf %b.tar.xz %b
+
 GoFMT
 	go fmt %f
 
@@ -7,7 +19,10 @@ GoRUN
 GIT reset
 	git reset --hard origin
 
-Install on android device
+ANDROID show apk's
+    adb shell cmd package list package -f
+
+ANDROID install on device
 	adb install %f
 
 Extract by HARx

@@ -91,7 +91,7 @@ editor_stop_format_chars=-+*\\,.;:&>
 editor_state_full_filename=0
 
 [Layout]
-message_visible=1
+message_visible=0
 keybar_visible=1
 xterm_title=1
 output_lines=0
@@ -100,7 +100,7 @@ menubar_visible=1
 free_space=1
 horizontal_split=0
 vertical_equal=1
-left_panel_size=75
+left_panel_size=85
 horizontal_equal=1
 top_panel_size=1
 
@@ -129,6 +129,8 @@ linux=
 xterm-new=
 
 xterm=
+
+screen=
 
 [Panels]
 show_mini_info=true
